@@ -1,0 +1,42 @@
+body{
+    font-family: 'Kufam', cursive;
+}
+.im{
+    background: url(../images/wallpaperflare.com_wallpaper\ \(13\).jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.wrapp{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.wrapp h1{
+    color: red;
+    font-size: 3.5rem;
+    text-align: center;
+
+}
+.im2{
+    margin-top: 15px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.ilist{
+    width: 24%;
+    float: left;
+    margin-left: 8px;
+}
+#sec4{
+    height: 60px;
+    background-color: lightpink;
+    color: white;
+    font-size: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
