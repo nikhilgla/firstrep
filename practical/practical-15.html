@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practical 15</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #0077b3;
+        }
+
+        p {
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            margin: 30px 20px;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #minus, #plus {
+            height: 140px;
+            width: 140px;
+            padding: 5px;
+            background-color: #ff3333;
+            font-size: 80px;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+<p> COUNTER</p>
+<div id="container">
+    <button id="minus">-</button>
+    <p style="font-size: 60px;" id="count">0</p>
+    <button id="plus">+</button>
+
+</div>
+<script>
+    var minus = document.getElementById("minus");
+    var plus = document.getElementById("plus");
+    count = document.getElementById("count");
+    var counter = 0;
+    updateCounter();
+
+    function updateCounter() {
+        count.innerHTML = counter;
+        if (counter <= 0) minus.style.color = "grey";
+        else minus.style.color = "black";
+    }
+
+    plus.addEventListener("click", () => {
+        counter++;
+        updateCounter();
+    });
+
+    minus.addEventListener("click", () => {
+
+
+        if (counter <= 0) {
+            minus.disable = true;
+        } else {
+            counter--;
+            minus.disable = false;
+        }
+        updateCounter();
+    });
+</script>
+</body>
+</html>
