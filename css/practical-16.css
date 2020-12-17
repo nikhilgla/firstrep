@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#809fff , #0000ff);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+ h1{
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+    color: bisque;
+}
+#input{
+    outline: none;
+    border: none;
+    height: 7vh;
+    width:270px;
+    margin-left: 10px;
+    font-size: 22px;
+    color:black;
+    background-color:white;
+}
+.todos{
+    /* border:1px solid black; */
+    width: 25%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-btn{
+    height:5vh;
+    padding: 8px;
+    margin-left:0;
+    margin-right: 5px;
+    background-color:#000099; 
+    outline: none;
+    color: #0099e6;
+    border-radius: 5px;
+}
+
+.todo {
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:5px;
+    margin-top:5px;
+    background-color:white;
+}
+.todo li{
+    list-style: none;
+    font-size: 25px;
+    flex: 1;
+    color:black;
+    margin-left: 15px;
+}
+.todo .check-btn{
+    padding:11px;
+    color:white;
+    background-color: #99ff99;
+    outline: none;
+    border: none;
+}
+.todo .delete-btn{
+    padding:11px;
+    color: white;
+    background-color: #ff33bb;
+    outline: none;
+    border: none;
+}
+i{
+    pointer-events: none;
+}
+.check{
+    text-decoration: line-through;
+    opacity: 0.5;
+    background-color: #66b3ff;
+    padding: 0px;
+    margin:0px;
+
+}
