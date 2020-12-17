@@ -1,0 +1,103 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f105c;
+}
+.container{
+    width:470px;
+    background-color: white;
+    height:500px;
+    border-radius: 4px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding:10px;
+}
+h1{
+    text-align: center;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input{
+    margin: 15px;
+    height:30px;
+    border:none;
+    outline:none;
+    border-bottom:1px solid black;
+    width: 450px;
+}
+#form small{
+    font-weight: bolder;
+    margin:5px;
+    margin-left:10px;
+    color: red;
+    visibility: hidden;
+}
+.name{
+    display: flex;
+    /* border:1px solid black; */
+}
+.email{
+    display: flex;
+}
+.password{
+    display: flex;
+}
+.confirm-password{
+    display: flex;
+    color: black;
+}
+.name i{
+    margin:0px;
+    position: absolute;
+    right:550px;
+    text-align: center;
+    top:190px;
+    visibility: hidden;
+}
+.email i{
+    margin:0px;
+    position: absolute;
+    right:550px;
+    text-align: center;
+    top:275px;
+    visibility: hidden;
+}
+.password i{
+    margin:0px;
+    position: absolute;
+    right:550px;
+    text-align: center;
+    top:365px;
+    visibility: hidden;
+}
+.confirm-password i{
+    margin:0px;
+    position: absolute;
+    right:550px;
+    text-align: center;
+    top:450px;
+    visibility: hidden;
+}
+#submit-btn{
+    width:425px;
+    height:40px;
+    text-align: center;
+    margin:20px auto;
+    border:none;
+    outline:none;
+    background-color: #874dbd;
+    border-radius:5px;
+    color:white;
+}
