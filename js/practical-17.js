@@ -18,25 +18,25 @@ var today = time.toDateString();
 clock.innerHTML = `${addZero(hour_t)}<span>:</span>${addZero(min)}<span>:</span>${addZero(seconds)} ${amPm}`;
 todayDate.innerHTML = `${today}`;
 if (hours >=20){
-    document.body.style.backgroundImage = "url('../image/p17night.jpg')";
+    document.body.style.backgroundImage = "url('../images/p17.jpg')";
     clock.style.color = "white";
     greeting.style.color = "white";
     greeting.innerHTML = 'Good Night';
 }
 else if(hours>=16 && hours<20){
-    document.body.style.backgroundImage = "url('../image/p17evening.jpg')";
+    document.body.style.backgroundImage = "url('../images/p17.jpg')";
     clock.style.color = "white";
     greeting.style.color = "white";
     greeting.innerHTML = 'Good Evening';
 }
 else if(hours>=12 && hours<16){
-    document.body.style.backgroundImage = "url('../image/p17afternoon.jpg')";
+    document.body.style.backgroundImage = "url('../images/p17.jpg')";
     clock.style.color = "black";
     greeting.style.color = "white";
     greeting.innerHTML = 'Good Afternoon';
 }
 else{
-    document.body.style.backgroundImage = "url('../image/p17morning.jpg')";
+    document.body.style.backgroundImage = "url('../images/p17.jpg')";
     clock.style.color = "Black";
     greeting.style.color = "#E60A2F";
     greeting.innerHTML = 'Good Morning';
