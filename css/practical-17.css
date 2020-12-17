@@ -1,0 +1,45 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+background-size: cover;
+background-repeat: no-repeat;
+}
+.time-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock{
+    font-size: 8rem;
+    margin: 10px;
+}
+
+.greeting{
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.name{
+    font-size: 4rem;
+    margin: 5px;
+    color: black;
+}
+
+.heart{
+    font-size: 8rem;
+    opacity: 0.6;
+}
+
+#date{
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px #0e0d0d;
+    margin: 10px;
+}
